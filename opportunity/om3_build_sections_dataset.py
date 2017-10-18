@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on September 2017
+Created in September 2017
 
 This module builds a new dataset from training and testing timseries dataset.
 It selects a size for its sliding window and iteratively take a section from

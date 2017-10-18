@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created  September  2017
+Created in September  2017
     To evaluate the performance of time-series transformation by RAE,
     This modul implements a ConvNet as a third party model (server model).
     

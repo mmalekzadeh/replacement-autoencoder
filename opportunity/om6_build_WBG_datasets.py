@@ -1,7 +1,7 @@
     #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created  September  2017
+Created in September  2017
     This modul divides datasets into three disjoint sets,
     by considering white-listed, black-listed, and gray-listed inferences,
 @author: mmalekzadeh

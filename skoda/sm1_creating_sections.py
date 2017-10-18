@@ -1,7 +1,7 @@
     #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on September 2017
+Created in September 2017
 
 This module merges seperated files in OPPORTUNITY Activity Recognition Data Set.
 It enables to create customized training and testing dataset. 

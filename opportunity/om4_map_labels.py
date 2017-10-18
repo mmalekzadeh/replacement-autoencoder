@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on  September  2017
+Created in  September  2017
 
     This module map each class label to a number between 0 and 17
     (This will be useful when you want to apply one-hot encoding...
