@@ -1,4 +1,4 @@
-    #!/usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created in September 2017
@@ -37,11 +37,7 @@ def create_sections(hand):
     if(hand == "left"):
         seg1 = all_data[:,0:48]
         seg2 = all_data[:,54:60]
-        all_data = np.append(seg1, seg2 ,axis=1) 
-    
-    
-    # ## normalize each sensor’s data to have a zero mean and unity standard deviation.
-    all_data = stats.zscore(all_data, axis=0, ddof=0)
+        all_data = np.append(seg1, seg2 ,axis=1)     
     
     all_data = all_data.T
     all_labels = all_labels.T
@@ -96,13 +92,22 @@ def create_sections(hand):
         k = np.where(classes == all_labels_shots[i])
         ordinal_labels[i]= k[0]
     
-    ## split into 75% for train and 25% for test
+    ## split into 80% for train and 20% for test
     from sklearn.model_selection import train_test_split
     X_train, X_test, y_train, y_test = train_test_split(all_data_shots,
                                                         ordinal_labels,
                                                         test_size=0.2,
                                                         random_state=8)
     
+    # ## normalize each sensor’s data to have a zero mean and unity standard deviation.
+    for sid in range(X_train.shape[1]):
+        mean = (np.mean(X_train[:,sid,:]))
+        std  = (np.std(X_train[:,sid,:]))
+        X_train[:,sid,:] -= mean
+        X_test[:,sid,:] -= mean
+        X_train[:,sid,:] /= std
+        X_test[:,sid,:] /= std
+
     """
     above code maps each class label to a number between 0 and 10
     (This will be useful when you want to apply one-hot encoding using np_utils (from (keras.utils)) )
@@ -118,4 +123,4 @@ def create_sections(hand):
 
 ##########
 # Select Hand: "left" or "right"
-create_sections(hand = "right")
+create_sections(hand = "left")
