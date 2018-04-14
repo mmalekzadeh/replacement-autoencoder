@@ -2,7 +2,7 @@
 ## Keras Implementation of the Paper ["Replacement AutoEncoder: A Privacy-Preserving Algorithm for Sensory Data Analysis".](https://arxiv.org/abs/1710.06564)
 
 ## An example of the whole process on Skoda dataset.
-Codes and files are available under "skoda" folder of.
+Codes and files are available under "skoda" folder.
 
 ### Description of Skoda Dataset
 
