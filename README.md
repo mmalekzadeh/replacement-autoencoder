@@ -1,7 +1,7 @@
 # Replacement AutoEncoder (RAE)
-Keras Implementation of the Paper "Replacement AutoEncoder: A Privacy-Preserving Algorithm for Sensory Data Analysis".
+## Keras Implementation of the Paper "Replacement AutoEncoder: A Privacy-Preserving Algorithm for Sensory Data Analysis".
 
-# An example of the whole prooces on Skoda dataset.
+## An example of the whole process on Skoda dataset.
 Codes and files are available under "skoda" folder of.
 
 ### Description of Skoda Dataset
