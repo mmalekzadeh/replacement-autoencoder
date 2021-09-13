@@ -2,7 +2,20 @@
 ## Keras Implementation of the Paper ["Replacement AutoEncoder: A Privacy-Preserving Algorithm for Sensory Data Analysis".](https://arxiv.org/abs/1710.06564)
 __________________________________________________________________
 
-## An example of the whole process on Skoda dataset.
+# Citation
+Please use:
+```bibtex
+@inproceedings{malekzadeh2017replacement,
+  author={Malekzadeh, Mohammad and Clegg, Richard G. and Haddadi, Hamed},
+  booktitle={2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation (IoTDI)}, 
+  title={Replacement AutoEncoder: A Privacy-Preserving Algorithm for Sensory Data Analysis}, 
+  year={2018},
+  pages={165-176},
+  doi={10.1109/IoTDI.2018.00025}
+}
+```
+
+# An example of the whole process on Skoda dataset.
 Codes and files are available under "skoda" folder: [RAE_on_Skoda_dataset.ipynb](https://github.com/mmalekzadeh/replacement-autoencoder/blob/master/skoda/RAE_on_Skoda_dataset.ipynb)
 
 ### Description of Skoda Dataset
